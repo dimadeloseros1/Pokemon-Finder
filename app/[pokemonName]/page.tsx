@@ -20,7 +20,7 @@ const PokemonPage = async ({ params }: { params: { pokemonName: string } }) => {
                     name={pokemonName}
                 />
             </div>
-            <h3>Weight: {pokemonObject.Weight}</h3>
+            <h3>Weight: {pokemonObject.weight}</h3>
             <div className="flex-col">
                 {pokemonObject.stats.map((statObject: any) => {
                     const statName = statObject.stat.name;
